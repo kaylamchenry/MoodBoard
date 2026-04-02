@@ -1,6 +1,6 @@
 /*style the body*/
 body{
-    font-family:cursive;
+    font-family:Andale Mono, monospace;
     margin: 0;
 }
 
@@ -8,26 +8,36 @@ body{
 .header {
     padding: 80px;
     text-align:center;
-    background: #1abc9c;
-    color: white;
+    background: #f9d9e7;
+    color: rgb(227, 221, 221);
+  -webkit-text-stroke: 1px rgb(98, 85, 85);
 }
 
 /*increase the font size of the heading*/
 .header h1 {
     font-size: 40px;
+    font-family: Snell Roundhand, cursive;
+}
+
+/*header titles*/
+.side h2{
+    font-family: Snell Roundhand, cursive;
+}
+.side h3 {
+    font-family: Snell Roundhand, cursive;
 }
 
 /*style of the navbar*/
 .navbar {
 overflow: hidden;
-background-color: #333;
+background-color: #fffcfc;
 }
 
 /*style the navbar links*/
 .navbar a {
     float: left;
     display: block;
-    color: white;
+    color: rgb(130, 126, 126);
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
@@ -40,7 +50,7 @@ background-color: #333;
 
 /*change color on hover*/
 .navbar a:hover{
-    background-color: #ddd;
+    background-color: #fab4d5;
     color: black;
 }
 

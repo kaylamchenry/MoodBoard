@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>PAGE TITLE</title>
+</head>
+<body>
+  <div class="header">
+    <h1>My Website</h1>
+    <p> A website created by me</p>
+    </div>
+    <div class="navbar">
+        <a href="index.html">home</a>
+        <a href="services.html">services</a>
+        <a href="#">contact</a>
+        <a href="#" class="right">login</a>
+    </div>
+<body>
+    <main>
+    <div class="container py-2">
+        <div class="card" style="width: 28rem;">
+            <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/37232407-3ba8-4c5f-9bac-d56675a0402c/air-jordan-1-mid-se-zapatillas-nino-a-pZrKG1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Air Jordan</h5>
+              <p class="card-text">Black and white $180</p>
+              <a href="#" class="btn btn-primary" onclick="DisplayNumberOfProductsInCard()"> add to cart</a>
+              <a href="#" class="btn btn-primary" id="myPurchaseButton" onclick="ShowProducts()">buy now</a>
+              <a href="#" class="btn btn-primary" id="">&hearts;</a>
+
+              
+            </div>
+        </div>
+    </div>
+<script>
+
+       let numberOfItemsInCards = 0;
+
+        //Declaration of function
+       function showList() {
+        document.getElementById('myShoppingList').innerText = numberOfItemsInCards;
+       }
+
+        //Call the function -> Running the function  clickMe();
+       
+        function ShowProducts() {
+            alert(displayProduct)
+        }
+
+       function DisplayNumberOfProductsInCard() {
+        numberOfItemsInCards++ // Add 1 item to the numberofItems in cards
+        alert(numberOfItemsInCards); // Display the value of numberOfItemsInCards
+       }
+
+       
+
+        //Array of Objects shoeproducts
+        let myShoeCatalogus = 
+         [
+            {
+                productname: "Air Jordan",
+                price: 100.00,
+                itemsIncart: 2,
+                namesOfProductsInCard: ["Air Jordan","Air Max","Air Wind"], // A list of products
+                purchaseDate: new Date(2023-9-18),
+                totalPrice: 0
+            },
+            {
+                productname: "Air MAx",
+                price: 150.00,
+                itemsIncart: 2,
+                namesOfProductsInCard: ["Air Max 1", "Air Max 2"], // A list of products
+                purchaseDate: new Date(2023-9-18),
+                totalPrice: 0
+            }
+        ];
+
+       //Show the productname and productprice of both products
+       let displayProduct = `
+        Product Name: ${myShoeCatalogus[0].productname}
+        Price: $${myShoeCatalogus[0].price}
+
+        Product Name: ${myShoeCatalogus[1].productname}
+        Price: $${myShoeCatalogus[1].price}
+      `;
+</script>
+    </main>
+</body><footer>
+    &copy; 2026 My Website
+</footer>
+<script src="script.js"></script> 
+        
+</body>
+</html>
